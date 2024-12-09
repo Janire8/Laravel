@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
+use App\Models\Note;
 
 Route::get('/', function () {
     return view('welcome');
