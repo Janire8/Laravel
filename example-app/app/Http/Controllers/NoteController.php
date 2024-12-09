@@ -25,4 +25,6 @@ class NoteController extends Controller
     public function edit(Note $note):View{
         return view('note.edit', compact('note'));
     }
+
+    //REQUEST
 }

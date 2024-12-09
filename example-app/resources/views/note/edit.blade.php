@@ -9,7 +9,8 @@
 <body>
 
 <a href = "{{route('note.index')}}">ATRAS</a>
-<form action="{{route('note.update', $note->id)}}" method="post">
+<form action="{{route('note.update', $note->id)}}" method="POST">
+<!-- Directiva poder editar formulario -->
 @method('PUT')    
 @csrf 
   <ul>
