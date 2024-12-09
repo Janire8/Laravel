@@ -11,8 +11,11 @@ class NoteController extends Controller
     public function index(){
         // return "hola";
         $notes = Note::all();
-   
-        
         return view ('note.index', compact('notes'));
+    }
+
+    public function formulario(){
+        //$notes = Note::all();
+        return view ('formulario.form');
     }
 }

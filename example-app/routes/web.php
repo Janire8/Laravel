@@ -9,3 +9,5 @@ Route::get('/', function () {
 });
 
 Route::get('/note',[NoteController::class, 'index']);
+
+Route::get('/formulario',[NoteController::class, 'formulario']);
