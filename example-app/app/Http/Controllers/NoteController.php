@@ -22,7 +22,7 @@ class NoteController extends Controller
        Note::create($request->all());
        return redirect()->route('note.index');
     }
-    public function edit(Note $note):View{
+    public function edit(Note $note){
         return view('note.edit', compact('note'));
     }
 

@@ -8,9 +8,15 @@
 <body>
     <h1>Notas</h1>
     <ul>
-        @foreach ($notes as $note)
+        <!-- @foreach ($notes as $note)
             <li>{{ $note->title }} -- {{$note->description}}</li>
-        @endforeach
+        @endforeach -->
+
+        @forelse($notes as $note)
+            <li><a href="#">{{$note-->title}}<a/><a href="#">EDITAR</a> | <a href = "#">DELETE</a></li>
+        @empty
+        <p>No data.<p>
+        @endforelse
     </ul>
 </body>
 </html>
