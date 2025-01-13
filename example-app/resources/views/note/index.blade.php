@@ -13,7 +13,7 @@
         @endforeach -->
 
         @forelse($notes as $note)
-            <li><a href="#">{{$note-->title}}<a/><a href="#">EDITAR</a> | <a href = "#">DELETE</a></li>
+            <li><a href="#">{{$note->title}}<a/> | <a href="{{route('note.edit')}}">EDITAR</a> | <a href = "#">DELETE</a></li>
         @empty
         <p>No data.<p>
         @endforelse
